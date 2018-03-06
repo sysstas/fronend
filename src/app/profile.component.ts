@@ -42,7 +42,7 @@ export class ProfileComponent {
     ngOnInit(){
         //creating variable that can provide id parametet from URL
         var id = this.route.snapshot.params.id
-        this.apiService.getProfile(id).subscribe( data => this.profile = data.json() )
+        this.apiService.getProfile(id).subscribe( data => this.profile = data )
     }
        
     
