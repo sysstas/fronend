@@ -19,9 +19,14 @@ import { LoginComponent } from './login.component';
 import { UsersComponent } from './users.component';
 import { ProfileComponent } from './profile.component';
 import { AuthService } from './auth.service';
+<<<<<<< HEAD
 import { PostComponent } from './post.component';
 import { AuthInterceptorService } from './authInterceptor.service';
 
+=======
+import { PostComponent } from './post.component'; 
+import { AuthInterceptorService } from './authinterceptor.service';
+>>>>>>> 5bc43845d815248b7953bfc5b23ba4142a8738b0
 
 
 const routes =  [
@@ -54,7 +59,11 @@ const routes =  [
     MatListModule,
     BrowserAnimationsModule
   ],
+<<<<<<< HEAD
   providers: [ApiService, AuthService, {
+=======
+  providers: [ApiService, AuthService, AuthInterceptorService, {
+>>>>>>> 5bc43845d815248b7953bfc5b23ba4142a8738b0
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptorService,
     multi: true

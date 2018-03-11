@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { HttpClient} from '@angular/common/http'
+=======
+import { HttpClient } from '@angular/common/http'
+>>>>>>> 5bc43845d815248b7953bfc5b23ba4142a8738b0
 import { Injectable } from '@angular/core'
 
 @Injectable()
